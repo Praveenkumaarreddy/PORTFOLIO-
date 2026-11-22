@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Praveen Kumaar Reddy — B.Tech CSE (AI & ML) student and GenAI developer." />
+  <title>Praveen Kumaar Reddy | AI & GenAI Developer</title>
+  <style>
+    :root{--bg:#07111f;--panel:#101d30;--panel2:#0c1829;--text:#edf4ff;--muted:#a9b8cc;--accent:#63e6be;--accent2:#7aa7ff;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,#17334a 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(7,17,31,.84);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:.94rem}.navlinks a:hover{color:var(--accent)}
+    .hero{padding:94px 0 76px;display:grid;grid-template-columns:1.35fr .65fr;gap:42px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.06;letter-spacing:-2px;margin:14px 0 20px}
+    h1 span{color:var(--accent)}.lead{font-size:1.12rem;color:var(--muted);max-width:660px}
+    .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+    .btn{padding:12px 19px;border-radius:12px;font-weight:750;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}
+    .primary{background:var(--accent);color:#062019;border-color:var(--accent)}.secondary:hover{border-color:var(--accent);color:var(--accent)}
+    .hero-card{background:linear-gradient(145deg,rgba(99,230,190,.13),rgba(122,167,255,.08));border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 22px 70px rgba(0,0,0,.22)}
+    .avatar{width:74px;height:74px;border-radius:20px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#07111f;font-size:1.65rem;font-weight:900;margin-bottom:20px}
+    .hero-card h3{margin:0 0 5px}.hero-card p{margin:0;color:var(--muted)}
+    .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.stat{background:rgba(4,12,22,.42);padding:13px;border-radius:13px}.stat b{display:block;color:var(--accent);font-size:1.2rem}.stat small{color:var(--muted)}
+    section{padding:64px 0}.section-head{margin-bottom:27px}.section-head .eyebrow{font-size:.72rem}h2{font-size:2rem;letter-spacing:-.7px;margin:5px 0}.sub{color:var(--muted);margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel,.project,.skill{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.panel p{color:var(--muted);margin:0}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.tag{border:1px solid rgba(99,230,190,.25);background:rgba(99,230,190,.07);color:#c9ffed;padding:8px 12px;border-radius:999px;font-size:.9rem}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{display:flex;flex-direction:column;min-height:235px}.project h3{margin:0 0 8px}.project p{color:var(--muted);margin:0 0 18px}.project .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}.project .tags span{font-size:.78rem;color:#c6d5e8;background:var(--panel2);padding:5px 9px;border-radius:8px}.project a{color:var(--accent);font-weight:700;margin-top:16px;display:inline-block}
+    .education{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu-item{background:var(--panel);border:1px solid var(--line);padding:20px;border-radius:16px}.edu-item p{color:var(--muted);margin:4px 0 0}
+    .contact{background:linear-gradient(130deg,rgba(99,230,190,.12),rgba(122,167,255,.09));border:1px solid var(--line);border-radius:22px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    footer{padding:30px 0;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0 45px}.about,.projects,.education{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.82rem}.navlinks a:nth-child(2){display:none}.contact{align-items:flex-start;flex-direction:column}section{padding:48px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">PR<span>.</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+  <div class="wrap">
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">B.Tech AIML Student · GenAI Developer</div>
+        <h1>Hi, I'm Praveen.<br/>I build <span>AI-powered</span> solutions.</h1>
+        <p class="lead">I'm a Computer Science student specializing in Artificial Intelligence and Machine Learning, interested in building practical applications with Generative AI, NLP, and full-stack development.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my projects ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/t-praveen-kumaar-reddy-aaba64413/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="btn secondary" href="https://github.com/Praveenkumaarreddy" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="avatar">PR</div>
+        <h3>T Praveen Kumaar Reddy</h3>
+        <p>AI & ML undergraduate · Aspiring GenAI Engineer</p>
+        <div class="mini-stats">
+          <div class="stat"><b>AI/ML</b><small>Academic focus</small></div>
+          <div class="stat"><b>GenAI</b><small>Project interest</small></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <div class="section-head"><div class="eyebrow">A little about me</div><h2>Building, learning, improving.</h2></div>
+      <div class="about">
+        <div class="panel"><p>I'm pursuing a B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Nalla Malla Reddy Engineering College. I enjoy turning ideas into useful AI-powered products and continuously improving my development skills through hands-on projects.</p></div>
+        <div class="panel"><p>My current interests include Generative AI, prompt engineering, natural language processing, API development, and creating user-friendly web applications. I'm looking for opportunities to learn from real-world problems and contribute to meaningful AI projects.</p></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head"><div class="eyebrow">What I work with</div><h2>Skills & technologies</h2><p class="sub">A working set of tools I've used or explored in projects.</p></div>
+      <div class="skills">
+        <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML & CSS</span><span class="tag">Generative AI</span><span class="tag">Gemini API</span><span class="tag">Prompt Engineering</span><span class="tag">NLP</span><span class="tag">Sentence Transformers</span><span class="tag">Hugging Face</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">Pydantic</span><span class="tag">Gradio</span><span class="tag">SQLite</span><span class="tag">Vercel</span><span class="tag">Render</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head"><div class="eyebrow">Selected work</div><h2>Projects</h2><p class="sub">A few AI-focused projects from my learning journey.</p></div>
+      <div class="projects">
+        <article class="project">
+          <h3>Friendly AI Interview Coach</h3>
+          <p>An AI-powered mock interview application designed to help users practise interviews, receive feedback, and improve confidence, technical responses, and communication.</p>
+          <div class="tags"><span>Gemini API</span><span>FastAPI</span><span>JavaScript</span><span>SQLite</span></div>
+          <a href="https://ai-mock-interview-gz7x.vercel.app/" target="_blank" rel="noreferrer">View live project ↗</a>
+        </article>
+        <article class="project">
+          <h3>AI Resume Analyzer</h3>
+          <p>A project exploring how AI and language-processing techniques can help review resume content and provide useful improvement suggestions.</p>
+          <div class="tags"><span>Python</span><span>NLP</span><span>Hugging Face</span></div>
+          <a href="https://huggingface.co/spaces/Praveenkumaarreddy/AI_excellent_Resume_Analyzer" target="_blank" rel="noreferrer">Add / verify project link ↗</a>
+        </article>
+        <article class="project">
+          <h3>AI-Powered Caption Generator</h3>
+          <p>A small AI application built to generate social-media caption ideas from user prompts.</p>
+          <div class="tags"><span>Python</span><span>Generative AI</span><span>Gradio</span></div>
+          <a href="https://huggingface.co/spaces/Praveenkumaarreddy/AI_Powered_Caption_Generator" target="_blank" rel="noreferrer">Add / verify project link ↗</a>
+        </article>
+        <article class="project">
+          <h3>AI-Powered Interview Assistant</h3>
+          <p>An interview-practice project that explores AI-generated questions and feedback to support interview preparation.</p>
+          <div class="tags"><span>Python</span><span>AI</span><span>Hugging Face</span></div>
+          <a href="https://huggingface.co/spaces/Praveenkumaarreddy/AI_powered_interview_assistant" target="_blank" rel="noreferrer">Add / verify project link ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head"><div class="eyebrow">Education</div><h2>Academic background</h2></div>
+      <div class="education">
+        <div class="edu-item"><strong>B.Tech — CSE (Artificial Intelligence & Machine Learning)</strong><p>Nalla Malla Reddy Engineering College · 2025–Present</p></div>
+        <div class="edu-item"><strong>Areas of interest</strong><p>Generative AI · Machine Learning · NLP · Full-stack AI applications</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div><div class="eyebrow">Let's connect</div><h2>Have an opportunity or an idea?</h2><p class="sub">I'm open to learning, collaborating, and exploring AI/GenAI opportunities.</p></div>
+        <div class="actions">
+          <a class="btn primary" href="https://www.linkedin.com/in/t-praveen-kumaar-reddy-aaba64413/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+          <a class="btn secondary" href="https://github.com/Praveenkumaarreddy" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap">© <span id="year"></span> T Praveen Kumaar Reddy. Built with curiosity and a passion for AI.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
